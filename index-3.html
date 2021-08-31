@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +22,166 @@
             <div class="row">
                 <div class="col-8">
                     <h4>آدرس شما</h4>
+
+                    <form class="has-validation" novalidate>
+                            <div class="row form-group mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label" for="firstName">نام</label>
+                                    <input type="text" class="form-control" id="firstName">
+                                    <div class=" valid-feedback">
+                                        لطفا نام را وارد کنید
+                                    </div>
+                                    <div class=" valid-feedback">
+                                        نام وارد شد.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="lastName">نام خانوادگی</label>
+                                    <input type="text" class="form-control" id="lastName">
+                                    <div class=" valid-feedback">
+                                        لطفا نام را وارد کنید
+                                    </div>
+                                    <div class=" valid-feedback">
+                                        نام
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label" for="Username">نام کاربری</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label" for="Username">ایمیل <small class=" text-muted">(انتخابی)</small></label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon2">your@example.com</span>
+                                    <input type="email" class="form-control"  aria-label="Email" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label" for="Address">آدرس</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="استان_شهر..." aria-label="Address" aria-describedby="basic-addon3">
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label" for="Address2">آدرس دوم<small class=" text-muted">(انتخابی)</small></label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="استان_شهر..." aria-label="Address" aria-describedby="basic-addon3">
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3 row">
+                                    <div class="col-md-5">
+                                        <label for="country" class="form-label">کشور</label>
+                                        <select id="country" class="form-select">
+                                          <option selected>انتخاب کنید...</option>
+                                          <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="Province" class="form-label">استان</label>
+                                        <select id="Province" class="form-select">
+                                          <option selected>انتخاب کنید...</option>
+                                          <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="city" class="form-label">شهر</label>
+                                        <select id="city" class="form-select">
+                                          <option selected>انتخاب کنید...</option>
+                                          <option>...</option>
+                                        </select>
+                                    </div>
+                            </div> 
+                            <hr class="mb-4">
+                            <div class="row form-check">
+                                <div class="col-12">
+                                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                                      <label class="form-check-label" for="gridCheck">
+                                        قبل از ارسال سفارش برای هماهنگی تماس گرفته شود
+                                      </label>
+                                </div> 
+
+                                <div class="col-12">
+                                      <input class="form-check-input" type="checkbox" id="gridCheck-disabled" disabled>
+                                      <label class="form-check-label" for="gridCheck-disabled">
+                                        ذخیره سازی اطلاعات برای خرید بعدی
+                                      </label>
+                                </div>                           
+                            </div>
+                            <hr class="mb-4">
+
+                            <div class="form-check bank">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    بانک ملت
+                                </label>
+                            </div>
+
+                            <div class="form-check bank">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                بانک آینده
+                            </label>
+                            </div>
+
+                            <div class="form-check zarinPal disabled">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                                <label class="form-check-label" for="gridRadios3">
+                                    زرین پال
+                                </label>
+                            </div>
+                        <div class="row form-group mb-5">
+                            <div class="col-md-6">
+                                    <label class="form-label" for="CardholderName">نام دارنده کارت</label>
+                                    <input type="text" class="form-control" id="CardholderName">
+                                    <small class="text-muted">لطفا نام کامل دارنده کارت را به فارسی وارد کنید</small>
+                                    <div class=" valid-feedback">
+                                        لطفا نام دارنده کارت را وارد کنید                                    </div>
+                                    <div class=" valid-feedback">
+                                        نام دارنده کارت وارد شد                                    </div>
+                            </div>
+                            <div class="col-md-6">
+                                    <label class="form-label" for="CcreditCardrName">شماره کارت</label>
+                                    <input type="text" class="form-control" id="CcreditCardrName">
+                                    <small class="text-muted">لطفا نام کامل دارنده کارت را به فارسی وارد کنید</small>
+                                    <div class=" valid-feedback">
+                                        شماره کارت وارد شد                                    </div>
+                                    <div class=" valid-feedback">
+                                        لطفا شماره کارت را وارد کنید
+                                    </div>
+                            </div>
+                            <div class="col-md-6">
+                                    <label class="form-label" for="CardholderName-2">نام دارنده کارت</label>
+                                    <input type="text" class="form-control" id="CardholderName-2">
+                                    <small class="text-muted">لطفا نام کامل دارنده کارت را به فارسی وارد کنید</small>
+                                    <div class=" valid-feedback">
+                                        لطفا نام دارنده کارت را وارد کنید                                    </div>
+                                    <div class=" valid-feedback">
+                                        نام دارنده کارت وارد شد                                    </div>
+                            </div>
+                            <div class="col-md-6">
+                                    <label class="form-label" for="CcreditCardrName-2">شماره کارت</label>
+                                    <input type="text" class="form-control" id="CcreditCardrName-2">
+                                    <small class="text-muted">لطفا نام کامل دارنده کارت را به فارسی وارد کنید</small>
+                                    <div class=" valid-feedback">
+                                        شماره کارت وارد شد                                    </div>
+                                    <div class=" valid-feedback">
+                                        لطفا شماره کارت را وارد کنید
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5 pb-5">
+                            <button class="btn btn-primary" type="button">ادامه و ثبت خرید</button>
+                        </div>
+                    </form>
                 </div>
 
                 <div class="col-4">
@@ -74,12 +234,21 @@
                     
                 </div>
             </div>
+            <hr class="mb-4">
+            <footer class="my-5 text-center">
+                <p class=" text-muted">© 1396-1397 جعبه ابزار Bootstrap</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class=" text-decoration-none">حریم خصوصی</a></li>
+                    <li class="list-inline-item"><a href="#" class=" text-decoration-none">قوانین</a></li>
+                    <li class="list-inline-item"><a href="#" class=" text-decoration-none">خدمات رفاهی</a></li>                
+                </ul>
+                
+            </footer>
         </div>
         
 
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-
     </body>
 </html>
