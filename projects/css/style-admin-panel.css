@@ -3,4 +3,46 @@ body{
     text-align: right;
     font-family: Vazir;
     font-weight: 300;
+    color: #5a5a5a;
+}
+
+#sidebar a{
+    color: rgba(var(--bs-light-rgb),var(--bs-text-opacity))!important;
+}
+
+#sidebar {
+    height: 100%;
+}
+
+#sidebar.collapsing {
+    height: 0;
+}
+
+@media (min-width : 768px) {
+    #sidebar {
+        height: calc( 100vh - 62px) !important;
+        position: fixed;
+        transition: transform .5s linear;        
+    } 
+    #sidebar.collapse {
+        transform: translate(100% , 0);
+    }
+    #sidebar.collapse.show {
+        transform: translate(0 , 0);
+    }
+    #sidebar.collapsing {
+        transform : translate(100% , 0);
+    }
+}
+
+#sidebar ul li div .fa-chevron-left{
+    transition: transform .3s ease-in-out;
+}
+
+#sidebar ul li .collapsed .fa-chevron-left{
+    transform: rotate(0deg);
+}
+
+#sidebar ul li .fa-chevron-left{
+    transform: rotate(-90deg);
 }
