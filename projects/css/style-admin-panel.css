@@ -22,7 +22,7 @@ body{
     #sidebar {
         height: calc( 100vh - 62px) !important;
         position: fixed;
-        transition: transform .5s linear;        
+        transition: transform .6s linear;        
     } 
     #sidebar.collapse {
         transform: translate(100% , 0);
@@ -32,6 +32,9 @@ body{
     }
     #sidebar.collapsing {
         transform : translate(100% , 0);
+    }
+    #main{
+        transition: .8s all;
     }
 }
 
