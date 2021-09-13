@@ -1,0 +1,125 @@
+body{
+    font-family: 'Vazir', Vazir, Tahoma, Arial, sans-serif !important;
+    position: relative;
+}
+
+a{
+    color: #e38cb7;
+}
+
+a:hover,
+a:first{
+    color: #d6616c;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin-top: 1.5rem;
+}
+
+h2{
+    font-size: 45px;
+    font-weight: 300;
+    color: #633991;
+    letter-spacing: -1px;
+    margin-top: 1.5rem;
+}
+
+.btn{
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: uppercase;
+    padding: .37rem 1.35rem;
+    transition: all .3s ease;
+}
+
+.btn-outline-light:hover{
+    color: #d6619c;
+}
+/* ------------------------------------
+                Navbar
+--------------------------------------*/
+
+.nav-menu{
+    padding: 1rem 0;
+    transition: all .3s ease;
+}
+
+.nav-menu.is-scrolling,
+.nav-menu.menu-is-open{
+    background-color: rgb(74,13,143);
+    background: linear-gradient(135deg , rgba(60,8,118,.9) 0% , rgba(250,0,118,.9) 100%);
+    box-shadow: 0px 5px 23px 0px rgba(0,0,0,.1);
+}
+
+.nav-menu.is-scrolling{
+    padding: 0;
+}
+
+.navbar-nav .nav-link{
+    position: relative;
+}
+
+@media (min-width : 992px){
+    .navbar-expand-lg .navbar-nav .nav-link{
+        font-size: 14px;
+        padding: 0 1rem;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link.active::after{
+        content: '';
+        border-bottom: 2px solid #cd99d4;
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        bottom: -5px;
+        height: 1px;
+    }
+}
+
+@media (max-width : 991px){
+    .navbar-nav .nav-item{
+        text-align: center;
+    }
+}
+
+/* ------------------------------------
+                Header
+--------------------------------------*/
+header{
+    padding: 100px 0 0;
+    text-align: center;
+    color: #fff;
+}
+
+.bg-gradientt {
+    background-image: linear-gradient(135deg , rgba(60,8,118,.8) 0% , rgba(250,0,118,.8) 100%);
+}
+
+.tagline {
+    font-size: 23px;
+    font-weight: 300;
+    color: #ffb8f6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.img-hoder {
+    height: 0;
+    padding-bottom: 33%;
+    overflow: hidden;
+}
+
+@media (max-width : 1200px){
+    .img-hoder{
+        padding-bottom: 50%;
+    }
+}
+@media (max-width : 767px){
+    .img-hoder{
+        padding-bottom: 100%;
+    }
+}
