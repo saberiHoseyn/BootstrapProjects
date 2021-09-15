@@ -19,4 +19,36 @@ $(document).ready( function() {
     sideNav.on('hide.bs.collapse' , function() {
         $(this).parents('.nav-menu').removeClass('menu-is-open');
     })
+
+    let commets  = $('.commets ');
+    if (commets.length && $.fn.owlCarousel) {
+        commets.owlCarousel({
+            rtl : true,
+            nav : true,
+            items : 1,
+            dots : false,
+            navText : ['<span class=" ti-angle-right"></span>' , '<span class="ti-angle-left"></span>']
+        });
+    }
+
+    let gallery  = $('#img-gallery');
+    if (gallery.length && $.fn.owlCarousel) {
+        gallery.owlCarousel({
+            rtl : true,
+            nav : false,
+            items : 3,
+            dots : true,
+            center : true,
+            autoplay : true,
+            loop : true,
+            responsive : {
+                0 : {
+                    items : 1,
+                },
+                768 : {
+                    items : 3,
+                }
+            }
+        });
+    }
 })
