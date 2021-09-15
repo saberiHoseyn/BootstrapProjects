@@ -20,6 +20,22 @@ $(document).ready( function() {
         $(this).parents('.nav-menu').removeClass('menu-is-open');
     })
 
+    $('#navbar .navbar-nav a').on('click' , function(e) {
+        let target = $(this.hash);
+        if(target.length) {
+            e.preventDefault();
+            $('html,body').animate ({
+                scrollTop : target.offset().top
+            },1000)
+        }
+
+    })
+
+
+
+
+
+
     let commets  = $('.commets ');
     if (commets.length && $.fn.owlCarousel) {
         commets.owlCarousel({
