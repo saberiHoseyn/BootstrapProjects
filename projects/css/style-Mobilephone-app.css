@@ -55,7 +55,6 @@ p.lead{
     margin-bottom: 2rem;
 }
 
-
 .text-primary{
     color: #e38ce7 !important;
 }
@@ -517,7 +516,6 @@ header{
     border: none;
 }
 
-
 .call-to-action {
     text-align: center;
     color: white;
@@ -571,3 +569,4 @@ footer a span{
 footer small a{
     text-decoration: none;
 }
+
