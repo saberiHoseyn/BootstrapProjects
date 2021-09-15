@@ -39,6 +39,13 @@ h4{
     color: #633991;
 }
 
+h5{
+    font-size: 28px;
+    font-weight: 300;
+    color: #633991;
+    margin-bottom: .7rem;
+}
+
 p{
     color: #959094;
 }
@@ -46,6 +53,10 @@ p{
 p.lead{
     color: #e38cb7;
     margin-bottom: 2rem;
+}
+
+.text-primary{
+    color: #e38ce7 !important;
 }
 
 .light-bg{
@@ -73,9 +84,16 @@ p.lead{
     transition: all .3s ease;
 }
 
+.btn-group-lg> .btn,
+.btn-lg {
+    padding: .8rem 1rem !important;
+    font-size: 15px;
+}
+
 .btn-outline-light:hover{
     color: #d6619c;
 }
+
 /* ------------------------------------
                 Navbar
 --------------------------------------*/
@@ -220,6 +238,41 @@ header{
     margin-bottom: 1.5rem;
 }
 
+.circle-icon{
+    box-shadow: 0px 9px 32px 0px rgba(0,0,0,0.07);
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    font-size: 48px;
+    color: #f5378e;
+    text-align: center;
+    font-weight: 300;
+    transition: all .3s ease;
+    background-color: #fff;
+    line-height: 88px;
+}
+
+.ui-steps li{
+    border: 0px;
+    padding: 15px 0px;
+}
+
+.ui-steps li:hover .circle-icon{
+    background-image: linear-gradient(122deg ,  #e6388e 0% , #fb378e 100%);
+    color: #fff;
+    box-shadow: 0px 9px 32px 0px rgba(0,0,0,0.09);
+}
+
+.ui-steps li:not(:last-child){
+    border-bottom: 1px solid #f8e3f0;
+}
+
+.ui-steps li .card-text{
+    font-size: 16px;
+}
+
 .btn-primary {
     border-radius: 3px;
     background: linear-gradient(122deg ,#e54595 0% , #fd378e 100%);
@@ -297,3 +350,144 @@ header{
     border-color: #ce75b4 #faf6fb #fff;
     color: #633991;
 }
+
+/* ------------------------------------
+                Comments
+--------------------------------------*/
+
+.section-titel {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.owl-carousel .owl-item img.client-img{
+    border-radius: 50%;
+    width: 110px;
+    margin: 30px auto;
+    box-shadow: 0px 9px 32px 0px rgba(0,0,0,.07);
+}
+
+.commet-single{
+    max-width: 80%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.blockquote{
+    color: #7a767a;
+    font-weight: 300;
+
+}
+
+.owl-prev,
+.owl-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+}
+
+.owl-next{
+    left: 0px;
+}
+
+.owl-prev{
+    right: 0px;
+}
+
+.owl-carousel .owl-dots {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+    background: #e7d9eb;
+    width: 35px;
+    height: 8px;
+    border-radius: 10px;
+    transition: all .5s ease-in;
+    margin: 0 7px;
+    outline: none;
+}
+
+.owl-carousel .owl-dots .owl-dot:hover {
+    background: #ff487e;
+
+}
+.owl-carousel .owl-dots .owl-dot.active {
+    box-shadow: 0px 9px 32px 0px rgba(0,0,0,.07);
+    background: #ff487e;
+    
+}
+
+.owl-prev.disabled,
+.owl-next.disabled{
+    opacity: .5;
+}
+
+.ti-angle-right,
+.ti-angle-left {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#img-gallery .owl-item {
+    box-shadow: 0px 9px 32px 0px rgba(0,0,0,.07);
+    transform: scale(.8);
+    transition: all .5s ease-in;
+}
+
+#img-gallery .owl-item.center{
+    transform: scale(1);
+    
+}
+
+/* ------------------------------------
+                Panelists
+--------------------------------------*/
+
+.card.pricing {
+    border : 1px solid #f1eef1; 
+}
+
+.card.pricing.popular {
+    border-top-width : 3px;
+    border-color: #ce75b4 #faf6fb #fff;
+    box-shadow: 0px 12px 59px 0px rgba(36,7,31,.11);
+    color: #633991;
+}
+
+.card.pricing .card-head {
+    text-align: center;
+    padding: 40px 0px 20px;
+}
+.card.pricing .card-head .price {
+    display: block;
+    font-size: 45px;
+    font-weight: 300;
+    color: #633991;
+
+}
+
+
+.card.pricing .card-head .price sub {
+    bottom: 0;
+    font-size: 55%;
+}
+
+.card.pricing .list-group-item {
+    border: 0;
+    text-align: center;
+    color: #959094;
+    padding: 1.05rem 1.25rem;
+}
+
+.card.pricing .list-group-item del {
+    color: #d9d3d8;
+}
+
+.card.pricing .card-body {
+    padding: 1.75rem;
+    border: none;
+}
+
+
